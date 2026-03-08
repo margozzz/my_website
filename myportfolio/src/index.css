@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #fefdfb;
+  --color-primary: #1d5685;
+  --color-accent: #55d4d1;
+  --font-hand: "Caveat", cursive;
+  /* 直接使用 Google Fonts 提供的站酷快乐体，完美替代马克笔手绘感，无需本地文件 */
+  --font-sans: "ZCOOL KuaiLe", cursive, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  background-image: 
+    linear-gradient(to right, rgba(29, 86, 133, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(29, 86, 133, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-weight: normal; /* 强制 normal，避免马克笔字体二次加粗糊成一团 */
+  letter-spacing: 0.02em; /* 模拟手写时的自然字间距 */
+  line-height: 1.8; /* 增加全局行高，防止粗笔画多行文字重叠 */
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none; /* 禁用浏览器的伪粗体/伪斜体渲染，保持手写体原貌 */
+}
+
+/* 覆盖 Tailwind 的 font-bold，防止浏览器强制加粗手写体 */
+h1, h2, h3, h4, h5, h6, .section-title, .font-bold {
+  font-weight: normal !important; 
+  letter-spacing: 0.02em !important;
+}
+
+/* 针对 Section 4 卡片标题的特定优化，确保垂直居中和行高 */
+h4 {
+  line-height: 1.6 !important;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.doodle-border {
+  border: 2px solid var(--color-primary);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.doodle-border-alt {
+  border: 2px solid var(--color-primary);
+  border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+}
+
+.doodle-button {
+  border: 2px solid var(--color-primary);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doodle-button:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 4px 4px 0px var(--color-accent);
+}
+
+.doodle-card {
+  border: 2px solid var(--color-primary);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.doodle-card:hover {
+  transform: scale(1.02) translateY(-5px);
+  box-shadow: 6px 6px 0px var(--color-accent);
+}
+
+.doodle-image {
+  border: 2px solid var(--color-primary);
+  border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: var(--font-hand);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: 3px solid var(--color-primary);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: white;
+  z-index: 10;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  z-index: -1;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  50% { transform: translateY(-15px) rotate(calc(var(--rot, 0deg) + 5deg)); }
+}
+
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
+.animate-float-delayed {
+  animation: float-slow 5s ease-in-out infinite 1s;
+}
+.animate-float-fast {
+  animation: float-slow 3s ease-in-out infinite 0.5s;
+}
+
+.shaky-stroke {
+  filter: url(#shaky-filter);
+}
+
+.crayon-texture {
+  filter: url(#crayon-filter);
+}
