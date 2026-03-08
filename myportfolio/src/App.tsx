@@ -59,10 +59,10 @@ const PhotoStack = () => {
 
   // Fixed order: 1,2 are Square (Life); 3,4 are Vertical (Work)
   const cards = [
-    { id: 1, type: 'square', text: 'Life', rotate: -2, src: getAcceleratedUrl('https://github.com/margozzz/portfolio-image/raw/main/images0.1.jpg') },
-    { id: 2, type: 'square', text: 'Life', rotate: 1.5, src: getAcceleratedUrl('https://github.com/margozzz/portfolio-image/raw/main/images0.2.jpg') },
-    { id: 3, type: 'vertical', text: 'Work', rotate: -1, src: getAcceleratedUrl('https://github.com/margozzz/portfolio-image/raw/main/images0.3.jpg') },
-    { id: 4, type: 'vertical', text: 'Work', rotate: 2.5, src: getAcceleratedUrl('https://github.com/margozzz/portfolio-image/raw/main/images0.4.jpg') },
+    { id: 1, type: 'square', text: 'Life', rotate: -2, src: getAcceleratedUrl('/images/images0.1.jpg') },
+    { id: 2, type: 'square', text: 'Life', rotate: 1.5, src: getAcceleratedUrl('/images/images0.2.jpg') },
+    { id: 3, type: 'vertical', text: 'Work', rotate: -1, src: getAcceleratedUrl('/images/images0.3.jpg') },
+    { id: 4, type: 'vertical', text: 'Work', rotate: 2.5, src: getAcceleratedUrl('/images/images0.4.jpg') },
   ];
 
   const handleFlip = () => {
@@ -522,39 +522,39 @@ const rawProjectsData = {
         { 
           type: 'image', 
           text: '图 1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images15.jpg' 
+          src: '/images/images15.jpg' 
         },
         { 
           type: 'image', 
           text: '图 2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images17.jpg' 
+          src: '/images/images17.jpg' 
         },
         { 
           type: 'image', 
           text: '图 3', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images16.jpg' 
+          src: '/images/images16.jpg' 
         },
         { 
           type: 'external_video', 
           text: '视频', 
           src: '',
           link: 'https://video.weibo.com/show?fid=1034:5166907297562637',
-          thumbnail: 'https://github.com/margozzz/portfolio-image/raw/main/cover1.jpg'
+          thumbnail: '/images/cover1.jpg'
         },
         { 
           type: 'image', 
           text: '图 4', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images18.jpg' 
+          src: '/images/images18.jpg' 
         },
         { 
           type: 'image', 
           text: '图 5', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images19.jpg' 
+          src: '/images/images19.jpg' 
         },
         { 
           type: 'image', 
           text: '图 6', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images20.jpg' 
+          src: '/images/images20.jpg' 
         }
       ]
     },
@@ -566,12 +566,12 @@ const rawProjectsData = {
         { 
           type: 'image', 
           text: '图 1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images21.jpg' 
+          src: '/images/images21.jpg' 
         },
         { 
           type: 'image', 
           text: '图 2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images22.jpg' 
+          src: '/images/images22.jpg' 
         }
       ]
     },
@@ -583,22 +583,22 @@ const rawProjectsData = {
         { 
           type: 'vertical-image', 
           text: '图 1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images23.jpg' 
+          src: '/images/images23.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images24.jpg' 
+          src: '/images/images24.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 3', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images25.jpg' 
+          src: '/images/images25.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 4', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images26.jpg' 
+          src: '/images/images26.jpg' 
         }
       ]
     }
@@ -611,32 +611,32 @@ const rawProjectsData = {
         { 
           type: 'vertical-image', 
           text: '图 1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images9.jpg' 
+          src: '/images/images9.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images10.jpg' 
+          src: '/images/images10.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 3', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images11.jpg' 
+          src: '/images/images11.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 4', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images12.jpg' 
+          src: '/images/images12.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 5', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images13.jpg' 
+          src: '/images/images13.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 6', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images14.jpg' 
+          src: '/images/images14.jpg' 
         }
       ]
     },
@@ -647,42 +647,42 @@ const rawProjectsData = {
         { 
           type: 'vertical-image', 
           text: '图 1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images1.jpg' 
+          src: '/images/images1.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images2.jpg' 
+          src: '/images/images2.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 3', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images3.jpg' 
+          src: '/images/images3.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 4', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images4.jpg' 
+          src: '/images/images4.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 5', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images5.jpg' 
+          src: '/images/images5.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 6', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images6.jpg' 
+          src: '/images/images6.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 7', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images7.jpg' 
+          src: '/images/images7.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '图 8', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images8.jpg' 
+          src: '/images/images8.jpg' 
         }
       ]
     }
@@ -695,82 +695,82 @@ const rawProjectsData = {
         { 
           type: 'square-image', 
           text: '1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images27.jpg' 
+          src: '/images/images27.jpg' 
         },
         { 
           type: 'square-image', 
           text: '2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images28.jpg' 
+          src: '/images/images28.jpg' 
         },
         { 
           type: 'square-image', 
           text: '3', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images29.jpg' 
+          src: '/images/images29.jpg' 
         },
         { 
           type: 'square-image', 
           text: '4', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images30.jpg' 
+          src: '/images/images30.jpg' 
         },
         { 
           type: 'square-image', 
           text: '5', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images31.jpg' 
+          src: '/images/images31.jpg' 
         },
         { 
           type: 'square-image', 
           text: '6', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images32.jpg' 
+          src: '/images/images32.jpg' 
         },
         { 
           type: 'square-image', 
           text: '7', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images33.jpg' 
+          src: '/images/images33.jpg' 
         },
         { 
           type: 'square-image', 
           text: '8', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images34.jpg' 
+          src: '/images/images34.jpg' 
         },
         { 
           type: 'square-image', 
           text: '9', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images35.jpg' 
+          src: '/images/images35.jpg' 
         },
         { 
           type: 'square-image', 
           text: '10', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images36.jpg' 
+          src: '/images/images36.jpg' 
         },
         { 
           type: 'square-image', 
           text: '11', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images37.jpg' 
+          src: '/images/images37.jpg' 
         },
         { 
           type: 'square-image', 
           text: '12', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images38.jpg' 
+          src: '/images/images38.jpg' 
         },
         { 
           type: 'square-image', 
           text: '13', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images39.jpg' 
+          src: '/images/images39.jpg' 
         },
         { 
           type: 'square-image', 
           text: '14', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images40.jpg' 
+          src: '/images/images40.jpg' 
         },
         { 
           type: 'square-image', 
           text: '15', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images41.jpg' 
+          src: '/images/images41.jpg' 
         },
         { 
           type: 'square-image', 
           text: '16', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images42.jpg' 
+          src: '/images/images42.jpg' 
         }
       ]
     },
@@ -781,37 +781,37 @@ const rawProjectsData = {
         { 
           type: 'square-image', 
           text: '1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images43.jpg' 
+          src: '/images/images43.jpg' 
         },
         { 
           type: 'square-image', 
           text: '2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images44.jpg' 
+          src: '/images/images44.jpg' 
         },
         { 
           type: 'square-image', 
           text: '3', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images45.jpg' 
+          src: '/images/images45.jpg' 
         },
         { 
           type: 'square-image', 
           text: '4', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images46.jpg' 
+          src: '/images/images46.jpg' 
         },
         { 
           type: 'square-image', 
           text: '5', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images47.jpg' 
+          src: '/images/images47.jpg' 
         },
         { 
           type: 'square-image', 
           text: '6', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images48.jpg' 
+          src: '/images/images48.jpg' 
         },
         { 
           type: 'square-image', 
           text: '7', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images49.jpg' 
+          src: '/images/images49.jpg' 
         }
       ]
     },
@@ -822,17 +822,17 @@ const rawProjectsData = {
         { 
           type: 'vertical-image', 
           text: '长图 1', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images50.jpg' 
+          src: '/images/images50.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '长图 2', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images51.jpg' 
+          src: '/images/images51.jpg' 
         },
         { 
           type: 'vertical-image', 
           text: '长图 3', 
-          src: 'https://github.com/margozzz/portfolio-image/raw/main/images52.jpg' 
+          src: '/images/images52.jpg' 
         }
       ]
     }
@@ -841,17 +841,17 @@ const rawProjectsData = {
     { 
       url: "https://mp.weixin.qq.com/s/oxLNy9P5KKvhRYORR7zLXQ", 
       title: "排版作品 1", 
-      thumbnail: "https://github.com/margozzz/portfolio-image/raw/main/images53.jpg" 
+      thumbnail: "/images/images53.jpg" 
     },
     { 
       url: "https://mp.weixin.qq.com/s/z1XNZFSI3Acu21ucGH_-Iw", 
       title: "排版作品 2", 
-      thumbnail: "https://github.com/margozzz/portfolio-image/raw/main/images54.jpg" 
+      thumbnail: "/images/images54.jpg" 
     },
     { 
       url: "https://mp.weixin.qq.com/s/z_OnqEdtW0kBgzTx85Nzow", 
       title: "排版作品 3", 
-      thumbnail: "https://github.com/margozzz/portfolio-image/raw/main/images55.jpg" 
+      thumbnail: "/images/images55.jpg" 
     }
   ],
   videos: [
@@ -861,7 +861,7 @@ const rawProjectsData = {
       text: '点击观看',
       src: '',
       link: 'http://xhslink.com/o/9djP0I3w08m',
-      thumbnail: 'https://github.com/margozzz/portfolio-image/raw/main/cover2.jpg'
+      thumbnail: '/images/cover2.jpg'
     },
     {
       id: "video-2",
@@ -869,7 +869,7 @@ const rawProjectsData = {
       text: '点击观看',
       src: '',
       link: 'http://xhslink.com/o/14k7X18yLys',
-      thumbnail: 'https://github.com/margozzz/portfolio-image/raw/main/cover3.jpg'
+      thumbnail: '/images/cover3.jpg'
     },
     {
       id: "video-3",
@@ -877,7 +877,7 @@ const rawProjectsData = {
       text: '点击观看',
       src: '',
       link: 'http://xhslink.com/o/1gDwe0fHbrz',
-      thumbnail: 'https://github.com/margozzz/portfolio-image/raw/main/cover4.jpg'
+      thumbnail: '/images/cover4.jpg'
     },
     {
       id: "video-4",
@@ -885,7 +885,7 @@ const rawProjectsData = {
       text: '点击观看',
       src: '',
       link: 'http://xhslink.com/o/27riSwQK9Xh',
-      thumbnail: 'https://github.com/margozzz/portfolio-image/raw/main/cover5.jpg'
+      thumbnail: '/images/cover5.jpg'
     }
   ]
 };
